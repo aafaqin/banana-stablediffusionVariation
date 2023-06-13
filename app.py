@@ -55,7 +55,7 @@ def inference(model_inputs:dict) -> dict:
         inp = tform(im).to(device).unsqueeze(0)
 
     out = model(inp, guidance_scale=3)
-    out["images"][0].save("result_s.jpg")
+    # out["images"][0].save("result_s.jpg")
 
     buffered = BytesIO()
     out["images"][0].save(buffered,format="JPEG")
