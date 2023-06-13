@@ -9,7 +9,7 @@ import sys
 
 # img_name = sys.argv[1:][0]   # to load from argv
 
-img_name="../2024_gmc_hummer_ev_suv_4k-t2.jpg"
+img_name="2024_gmc_hummer_ev_suv_4k-t2.jpg"
 with open(img_name, "rb") as f:
     bytes = f.read()
     encoded = base64.b64encode(bytes).decode('utf-8')
